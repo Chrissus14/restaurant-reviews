@@ -56,7 +56,7 @@ export default function RestaurantPage({ params }) {
             <span>{restaurant.priceRange}</span>
           </div>
           <p className="text-gray-600 mb-6">{restaurant.description}</p>
-          
+
           <div className="space-y-4 mb-8">
             <div className="flex items-center">
               <MapPinIcon className="h-5 w-5 text-gray-400 mr-2" />
@@ -79,10 +79,10 @@ export default function RestaurantPage({ params }) {
                 <label className="block mb-2">Rating</label>
                 <select
                   value={newReview.rating}
-                  onChange={(e) => setNewReview({...newReview, rating: Number(e.target.value)})}
+                  onChange={(e) => setNewReview({ ...newReview, rating: Number(e.target.value) })}
                   className="w-full p-2 border rounded"
                 >
-                  {[5,4,3,2,1].map(num => (
+                  {[5, 4, 3, 2, 1].map(num => (
                     <option key={num} value={num}>{num} stars</option>
                   ))}
                 </select>
@@ -91,7 +91,7 @@ export default function RestaurantPage({ params }) {
                 <label className="block mb-2">Comment</label>
                 <textarea
                   value={newReview.comment}
-                  onChange={(e) => setNewReview({...newReview, comment: e.target.value})}
+                  onChange={(e) => setNewReview({ ...newReview, comment: e.target.value })}
                   className="w-full p-2 border rounded"
                   rows="4"
                   required
