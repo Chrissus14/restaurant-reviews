@@ -1,0 +1,15 @@
+# Build artifacts
+node_modules/
+.next/
+out/
+
+# Local development
+.env.local
+.env.development.local
+
+# IDE files
+.idea/
+.vscode/
+
+# System files
+.DS_Store
